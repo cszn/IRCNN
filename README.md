@@ -13,6 +13,7 @@ Consequently, this enables an integration of any discriminative denoisers into m
 
 
 # Image Deblurring
+ The left is the blurred image. The right is the deblurred image by IRCNN with estimated kernels by other blind deblurring methods.
 - Deblur_set1
 
 <img src="testsets/Deblur_set1/Blurry4_1.png" width="400px"/> <img src="testsets/Deblur_set1/Blurry4_1_output_ircnn.png" width="400px"/>
