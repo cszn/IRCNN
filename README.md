@@ -43,9 +43,9 @@ The left is the low-resolution (LR) image. The right is the super-resolved image
 
 - SISR_set1, synthetic LR image SR
 
-<img src="testsets/SISR_set1/LR1_motion_x2.png" width="266px"/> <img src="testsets/SISR_set1/LR1_motion_x2_ircnn_x2.png" width="532px"/>
+<img src="testsets/SISR_set1/LR3_noisy_x2.png" width="160px"/> <img src="testsets/SISR_set1/LR3_noisy_x2_ircnn_x2.png" width="320px"/>
 
-<img src="testsets/SISR_set1/LR3_noisy_x2.png" width="266px"/> <img src="testsets/SISR_set1/LR3_noisy_x2_ircnn_x2.png" width="532px"/>
+<img src="testsets/SISR_set1/LR1_motion_x2.png" width="240px"/> <img src="testsets/SISR_set1/LR1_motion_x2_ircnn_x2.png" width="480px"/>
 
 - SISR_set2, real LR image SR
 
