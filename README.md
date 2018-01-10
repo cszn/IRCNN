@@ -49,7 +49,7 @@ The left is the low-resolution (LR) image. The right is the super-resolved image
 
 - SISR_set2, real LR image SR
 
-<img src="testsets/SISR_set2/chip.png" width="109px"/> <img src="testsets/SISR_set2/chip_ircnn_x2.png" width="218px"/>
+<img src="testsets/SISR_set2/chip.png" width="109px"/> <img src="testsets/SISR_set2/chip_ircnn_x2.png" width="218px"/><img src="testsets/SISR_set2/chip_ircnn_x4.png" width="436px"/>
 
 <img src="testsets/SISR_set2/David_Hilbert.png" width="220px"/> <img src="testsets/SISR_set2/David_Hilbert_ircnn_x2.png" width="440px"/>
 
