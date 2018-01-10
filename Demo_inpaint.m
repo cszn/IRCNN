@@ -44,8 +44,10 @@ end
 % ground truth image
 
 Iname   = 'butterfly_gray';   % Isigma = 0.5/255; Msigma = 1 or 3; window  = 7; for 75% 
-%Iname   = 'butterfly_color';  % Isigma = 0.5/255; Msigma = 5;      window  = 7; for 80% 
+Iname   = 'butterfly_color';  % Isigma = 0.5/255; Msigma = 5;      window  = 7; for 80% 
+Iname   = '09';               % Isigma = 0.5/255; Msigma = 1 or 3; window  = 7; for 50% 
 
+pert    = 0.5;        %  80% pixels are missing
 window  = 7;                 %  default 10, from [5,30]
 
 label   = im2single(imread(fullfile(folderTestCur,[Iname,'.png'])));
@@ -54,7 +56,7 @@ label   = im2single(imread(fullfile(folderTestCur,[Iname,'.png'])));
 
 % generate mask
 rand('seed',0);
-pert = 0.75;        %  80% pixels are missing
+
 mask = rand(a,b)>=pert; 
 mask = repmat(mask,[1,1,c]);
 
@@ -129,7 +131,7 @@ end
 
 [PSNR_Cur,SSIM_Cur] = Cal_PSNRSSIM(label*255,output,0,0);
 
-imshow(cat(2,im2uint8(y),output));
+imshow(cat(2,y,output));
 
 
 disp([PSNR_Cur,SSIM_Cur]);
