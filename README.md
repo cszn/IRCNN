@@ -45,17 +45,15 @@ The left is the low-resolution (LR) image. The right is the super-resolved image
 
 <img src="testsets/SISR_set1/LR1_motion_x2.png" width="266px"/> <img src="testsets/SISR_set1/LR1_motion_x2_ircnn_x2.png" width="532px"/>
 
-<img src="testsets/SISR_set1/LR2_gaussian_x2.png" width="266px"/> <img src="testsets/SISR_set1/LR2_gaussian_x2_ircnn_x2.png" width="532px"/>
-
 <img src="testsets/SISR_set1/LR3_noisy_x2.png" width="266px"/> <img src="testsets/SISR_set1/LR3_noisy_x2_ircnn_x2.png" width="532px"/>
 
 - SISR_set2, real LR image SR
 
-<img src="testsets/SISR_set2/David_Hilbert.png" width="266px"/> <img src="testsets/SISR_set2/David_Hilbert_ircnn_x2.png" width="532px"/>
+<img src="testsets/SISR_set2/chip.png" width="109px"/> <img src="testsets/SISR_set2/chip_ircnn_x2.png" width="218px"/>
+
+<img src="testsets/SISR_set2/David_Hilbert.png" width="220px"/> <img src="testsets/SISR_set2/David_Hilbert_ircnn_x2.png" width="440px"/>
 
 <img src="testsets/SISR_set2/Frog.png" width="266px"/> <img src="testsets/SISR_set2/Frog_ircnn_x2.png" width="532px"/>
-
-<img src="testsets/SISR_set2/chip.png" width="266px"/> <img src="testsets/SISR_set2/chip_ircnn_x2.png" width="532px"/>
 
 Use [Demo_SISR_direct_downsampler_real_application.m](IRCNN/Demo_SISR_direct_downsampler_real_application.m) to produce the above SISR results.
 
