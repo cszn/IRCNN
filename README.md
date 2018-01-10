@@ -44,6 +44,8 @@ The left is the masked image. The right is the recovered image by IRCNN.
 
 <img src="testsets/Inpaint_set1/butterfly_gray_75_masked.png" width="400px"/> <img src="testsets/Inpaint_set1/butterfly_gray_75_ircnn.png" width="400px"/>
 
+<img src="testsets/Inpaint_set1/09_50_masked.png" width="400px"/> <img src="testsets/Inpaint_set1/09_50_ircnn.png" width="400px"/>
+
 - Inpaint_set2
 
 <img src="testsets/Inpaint_set2/3ch.png" width="400px"/> <img src="testsets/Inpaint_set2/3ch_ircnn.png" width="400px"/>
