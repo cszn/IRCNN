@@ -34,8 +34,23 @@ Consequently, this enables an integration of any discriminative denoisers into m
 
 Use [Demo_deblur_real_application.m](IRCNN/Demo_deblur_real_application.m) to test IRCNN for image deblurring with estimated kernel by other blind deblurring methods.
 
+# Image Inpainting
 
+The left is the masked image. The right is the recovered image by IRCNN.
 
+- Inpaint_set1
+
+<img src="testsets/Inpaint_set1/butterfly_color_80_masked.png" width="400px"/> <img src="testsets/Inpaint_set1/butterfly_color_80_ircnn.png" width="400px"/>
+
+<img src="testsets/Inpaint_set1/butterfly_gray_75_masked.png" width="400px"/> <img src="testsets/Inpaint_set1/butterfly_gray_75_ircnn.png" width="400px"/>
+
+- Inpaint_set2
+
+<img src="testsets/Inpaint_set2/3ch.png" width="400px"/> <img src="testsets/Inpaint_set2/3ch_ircnn.png" width="400px"/>
+
+<img src="testsets/Inpaint_set2/new.png" width="400px"/> <img src="testsets/Inpaint_set2/new_ircnn.png" width="400px"/>
+
+Use [Demo_inpaint.m](IRCNN/Demo_inpaint.m) and [Demo_inpaint_real_application.m](IRCNN/Demo_inpaint_real_application.m) to produce the above results.
 
 # Single Image Super-Resolution (SISR)
 
@@ -49,7 +64,7 @@ The left is the low-resolution (LR) image. The right is the super-resolved image
 
 - SISR_set2, real LR image SR
 
-<img src="testsets/SISR_set2/chip.png" width="109px"/> <img src="testsets/SISR_set2/chip_ircnn_x2.png" width="218px"/><img src="testsets/SISR_set2/chip_ircnn_x4.png" width="436px"/>
+<img src="testsets/SISR_set2/chip.png" width="109px"/> <img src="testsets/SISR_set2/chip_ircnn_x2.png" width="218px"/> <img src="testsets/SISR_set2/chip_ircnn_x4.png" width="436px"/>
 
 <img src="testsets/SISR_set2/David_Hilbert.png" width="220px"/> <img src="testsets/SISR_set2/David_Hilbert_ircnn_x2.png" width="440px"/>
 
