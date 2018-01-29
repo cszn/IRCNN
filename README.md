@@ -9,7 +9,7 @@ Recent works have revealed that, with the aid of variable splitting techniques, 
 # Basic Idea
 With the aid of variable splitting techniques, such as alternating direction method of multipliers (ADMM) method and half quadratic splitting (HQS) method, it is possible to deal
 with fidelity term and regularization term of general image restoration formulation separately, and particularly, the regularization term only corresponds to a denoising subproblem. 
-Consequently, this enables an integration of any discriminative denoisers into model-based optimization methods to solve various image restoration tasks, such as image deblurring, image inpainting and single image super-resolution.
+Consequently, this enables an integration of any discriminative denoisers into model-based optimization methods to solve various image restoration tasks, such as **image deblurring**, **image inpainting**, **single image super-resolution** and **color image demosaicking**.
 
 
 # Image Deblurring
@@ -75,6 +75,20 @@ The left is the low-resolution (LR) image. The right is the super-resolved image
 Use [Demo_SISR_direct_downsampler_real_application.m](IRCNN/Demo_SISR_direct_downsampler_real_application.m) to produce the above SISR results.
 
 <img src="figs/sr1.png" width="820px"/>
+
+# Color Image Demosaicking
+
+The left is the mosaiced image. The right is the demosaiced image by IRCNN.
+
+- Set18 (McMaster, IMAX)
+
+<img src="figs/01_mosaik.png" width="400px"/> <img src="figs/01_ircnn.png" width="400px"/>
+
+- Set24 (Kodak)
+
+<img src="figs/kodim19_mosaik.png" width="400px"/> <img src="figs/kodim19_ircnn.png" width="400px"/>
+
+Use [Demo_demosaiking.m](IRCNN/Demo_demosaiking.m) to produce the above results.
 
 # Requirements and Dependencies
 - MATLAB R2015b
