@@ -55,6 +55,10 @@ The left is the masked image. The right is the recovered image by IRCNN.
 Use [Demo_inpaint.m](IRCNN/Demo_inpaint.m) and [Demo_inpaint_real_application.m](IRCNN/Demo_inpaint_real_application.m) to produce the above results.
 
 # Single Image Super-Resolution (SISR)
+```
+The left is the zoomed LR image (x3) with motion blur kernel, the right is the super-resolved image (x3) by IRCNN.
+```
+<img src="figs/LR1.png" width="400px"/> <img src="figs/LR1_IRCNN.png" width="400px"/>
 
 The left is the low-resolution (LR) image. The right is the super-resolved image by IRCNN.
 
