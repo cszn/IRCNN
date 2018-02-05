@@ -10,7 +10,7 @@ Recent works have revealed that, with the aid of variable splitting techniques, 
 With the aid of variable splitting techniques, such as alternating direction method of multipliers (ADMM) method and half quadratic splitting (HQS) method, it is possible to deal
 with fidelity term and regularization term of general image restoration formulation separately, and particularly, the regularization term only corresponds to a denoising subproblem. 
 Consequently, this enables an integration of any discriminative denoisers into model-based optimization methods to solve various image restoration tasks, such as 
-- **[Image Deblurring](# Image Deblurring)**
+- **Image Deblurring**
 - **Image Inpainting**
 - **Single Image Super-Resolution** 
 - **Color Image Demosaicking**
