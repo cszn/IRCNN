@@ -36,7 +36,7 @@ Consequently, this enables an integration of any discriminative denoisers into m
 
 
 
-Use [Demo_deblur_real_application.m](./Demo_deblur_real_application.m) to test IRCNN for image deblurring with estimated kernel by other blind deblurring methods.
+Use [Demo_deblur_real_application.m](Demo_deblur_real_application.m) to test IRCNN for image deblurring with estimated kernel by other blind deblurring methods.
 
 # Image Inpainting
 
@@ -56,7 +56,7 @@ The left is the masked image. The right is the recovered image by IRCNN.
 
 <img src="testsets/Inpaint_set2/new.png" width="400px"/> <img src="testsets/Inpaint_set2/new_ircnn.png" width="400px"/>
 
-Use [Demo_inpaint.m](./Demo_inpaint.m) and [Demo_inpaint_real_application.m](./Demo_inpaint_real_application.m) to produce the above results.
+Use [Demo_inpaint.m](./Demo_inpaint.m) and [Demo_inpaint_real_application.m](Demo_inpaint_real_application.m) to produce the above results.
 
 # Single Image Super-Resolution (SISR)
 ```
