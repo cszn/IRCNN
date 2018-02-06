@@ -36,7 +36,7 @@ Consequently, this enables an integration of any discriminative denoisers into m
 
 
 
-Use [Demo_deblur_real_application.m](IRCNN/Demo_deblur_real_application.m) to test IRCNN for image deblurring with estimated kernel by other blind deblurring methods.
+Use [Demo_deblur_real_application.m](./Demo_deblur_real_application.m) to test IRCNN for image deblurring with estimated kernel by other blind deblurring methods.
 
 # Image Inpainting
 
@@ -56,7 +56,7 @@ The left is the masked image. The right is the recovered image by IRCNN.
 
 <img src="testsets/Inpaint_set2/new.png" width="400px"/> <img src="testsets/Inpaint_set2/new_ircnn.png" width="400px"/>
 
-Use [Demo_inpaint.m](IRCNN/Demo_inpaint.m) and [Demo_inpaint_real_application.m](IRCNN/Demo_inpaint_real_application.m) to produce the above results.
+Use [Demo_inpaint.m](./Demo_inpaint.m) and [Demo_inpaint_real_application.m](./Demo_inpaint_real_application.m) to produce the above results.
 
 # Single Image Super-Resolution (SISR)
 ```
@@ -80,7 +80,7 @@ The left is the low-resolution (LR) image. The right is the super-resolved image
 
 <img src="testsets/SISR_set2/Frog.png" width="266px"/> <img src="testsets/SISR_set2/Frog_ircnn_x2.png" width="532px"/>
 
-Use [Demo_SISR_direct_downsampler_real_application.m](IRCNN/Demo_SISR_direct_downsampler_real_application.m) to produce the above SISR results.
+Use [Demo_SISR_direct_downsampler_real_application.m](./Demo_SISR_direct_downsampler_real_application.m) to produce the above SISR results.
 
 <img src="figs/sr1.png" width="820px"/>
 
@@ -96,7 +96,7 @@ The left is the mosaiced image. The right is the demosaiced image by IRCNN.
 
 <img src="figs/kodim19_mosaik.png" width="400px"/> <img src="figs/kodim19_ircnn.png" width="400px"/>
 
-Use [Demo_demosaiking.m](IRCNN/Demo_demosaiking.m) to produce the above results.
+Use [Demo_demosaiking.m](./Demo_demosaiking.m) to produce the above results.
 
 # Requirements and Dependencies
 - MATLAB R2015b
