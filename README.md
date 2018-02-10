@@ -15,6 +15,9 @@ Consequently, this enables an integration of any discriminative denoisers into m
 - **Single Image Super-Resolution** 
 - **Color Image Demosaicking**
 
+``
+Note: No task-specific training is needed for these tasks.
+``
 
 # Image Deblurring
  The left is the blurred image. The right is the deblurred image by IRCNN with estimated kernels by other blind deblurring methods.
