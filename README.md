@@ -106,6 +106,110 @@ Use [Demo_demosaiking.m](./Demo_demosaiking.m) to produce the above results.
 - [Cuda](https://developer.nvidia.com/cuda-toolkit-archive)-8.0 & [cuDNN](https://developer.nvidia.com/cudnn) v-5.1
 - [MatConvNet](http://www.vlfeat.org/matconvnet/)
 
+# Example: Installation of CUDNN5.1, CUDA 8.0 GA2 and Matconvnet (Windows 7 64bit) (by [kusiwu](https://github.com/kusiwu))
+Download Visual studio 2015 and install it.
+
+Download and install cuda 8.0 GA2: 
+There is two installer, one is base installer and the other one is patch. You should download all of them. 
+https://developer.nvidia.com/cuda-80-ga2-download-archive
+First install base installer (1.3GB) and then install patch (43.1MB)
+My cuda install path is: 'C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0'.
+You may need to add path CUDA_PATH if the setup does not do that. (as environment variable)
+
+Download cudnn5.1. You should register to nvidia and download cudnn 5.1.  Search in google please.
+Then you should extract the zip into "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0"
+(See http://docs.nvidia.com/deeplearning/sdk/cudnn-install/index.html)
+**Installations may need reboot.**
+
+%Download matconvnet http://www.vlfeat.org/matconvnet/download/matconvnet-1.0-beta25.tar.gz
+%create a directory named as "matconvnet" inside your matlab directory. 
+%My matlab directory is = "D:\Program files\MATLAB\R2016b\" , yours may differ, please change yours.
+%then extract matconvnet zip file and copy the file into "D:\Program files\MATLAB\R2016b\matconvnet\matconvnet-1.0-beta25"
+
+%open matlab, all the below codes should be written into matlab command window. 
+%write : in your case, the path can be different !!! Select visual studio 2015 path both C and C++ compiler.
+```
+mex -setup
+mex -setup:'D:\Program files\MATLAB\R2016b\bin\win64\mexopts\msvc2015.xml' C
+
+mex -setup C++
+mex -setup:'D:\Program files\MATLAB\R2016b\bin\win64\mexopts\msvcpp2015.xml' C++
+
+cd 'D:\Program files\MATLAB\R2016b\matconvnet\matconvnet-1.0-beta25'
+addpath matlab
+
+%run this
+vl_compilenn('enableGpu', true, 'cudaMethod', 'nvcc', ...
+               'cudaRoot', 'C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0', ...
+               'enableCudnn', true, 'cudnnRoot', 'C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0') ;
+```
+%you will see lots of these messages and also many warnings may occur.
+
+> %Building with 'Microsoft Visual C++ 2015 Professional'.
+> %MEX completed successfully.
+> %Building with 'Microsoft Visual C++ 2015 Professional (C)'.
+> %MEX completed successfully.
+
+
+%write this 
+[`gpuDevice`](https://www.mathworks.com/help/distcomp/examples/selecting-a-gpu-device-and-examining-its-properties.html?requestedDomain=true)
+and you should see something like that, but name may differ related with your graphic card.
+
+> CUDADevice with properties:
+> 
+>                       Name: 'Tesla K20c'
+>                      Index: 1
+>          ComputeCapability: '3.0'
+>             SupportsDouble: 1
+>              DriverVersion: 6
+>             ToolkitVersion: 5.5000
+>         MaxThreadsPerBlock: 1024
+>           MaxShmemPerBlock: 49152
+>         MaxThreadBlockSize: [1024 1024 64]
+>                MaxGridSize: [2.1475e+09 65535 65535]
+>                  SIMDWidth: 32
+>                TotalMemory: 5.0330e+09
+>            AvailableMemory: 4.9185e+09
+>        MultiprocessorCount: 13
+>               ClockRateKHz: 705500
+>                ComputeMode: 'Default'
+>       GPUOverlapsTransfers: 1
+>     KernelExecutionTimeout: 0
+>           CanMapHostMemory: 1
+>            DeviceSupported: 1
+>             DeviceSelected: 1
+
+
+
+%Lets test the system.
+`vl_testnn`
+
+%You will see messages like that this test may take 10 -20minute.
+
+> Done nnbilinearsampler[dataType=single,device=cpu]/bwd_data_consistency(ih=value2,iw=value1,oh=value1,ow=value2,multiple_grids=value1) in 0.00029763 seconds
+> Running nnbilinearsampler[dataType=single,device=cpu]/bwd_data_consistency(ih=value2,iw=value1,oh=value1,ow=value2,multiple_grids=value2)
+> Done nnbilinearsampler[dataType=single,device=cpu]/bwd_data_consistency(ih=value2,iw=value1,oh=value1,ow=value2,multiple_grids=value2) in 0.00046763 seconds
+> %At the end you should see a message like that:
+> %Totals:
+> %   3586 Passed, 0 Failed, 0 Incomplete.
+> %   1439.9093 seconds testing time.
+> 
+   
+## Testing IRCNN Demos
+Unzip IRCNN into a folder named for example:
+D:\IRCNN
+
+The last step, open matlab command window and write these,
+
+```
+cd 'D:\IRCNN'
+Demo_demosaiking.m
+```
+
+
+
+
+
 # Citation
 
 ```
