@@ -23,19 +23,19 @@ There is no additional training for these tasks.
  The left is the blurred image. The right is the deblurred image by IRCNN with estimated kernels by other blind deblurring methods.
 - Deblur_set1
 
-<img src="testsets/Deblur_set1/Blurry4_1.png" width="400px"/> <img src="testsets/Deblur_set1/Blurry4_1_output_ircnn.png" width="400px"/>
+<img src="testsets/Deblur_set1/Blurry4_1.png" width="400px"/> <img src="testsets/Deblur_set1/Blurry4_1_output_ircnn.png" width="400px"/> <img src="testsets/Deblur_set1/Blurry4_1_kernel.png" width="60px"/>
 
 - Deblur_set2
 
-<img src="testsets/Deblur_set2/im04_ker01.png" width="400px"/> <img src="testsets/Deblur_set2/im04_ker01_ircnn.png" width="400px"/>
+<img src="testsets/Deblur_set2/im04_ker01.png" width="400px"/> <img src="testsets/Deblur_set2/im04_ker01_ircnn.png" width="400px"/> <img src="testsets/Deblur_set2/im04_ker01_out_kernel.png" width="60px"/>
 
 - Deblur_set3
 
-<img src="testsets/Deblur_set3/2013622235456945_blur_79.png" width="400px"/> <img src="testsets/Deblur_set3/2013622235456945_blur_79_ircnn_Isigma_1_Msigma_1.png" width="400px"/>
+<img src="testsets/Deblur_set3/2013622235456945_blur_79.png" width="400px"/> <img src="testsets/Deblur_set3/2013622235456945_blur_79_ircnn_Isigma_1_Msigma_1.png" width="400px"/> <img src="testsets/Deblur_set3/2013622235456945_blur_79_kernel.png" width="60px"/>
 
-<img src="testsets/Deblur_set3/color_patch_blur_99.png" width="400px"/> <img src="testsets/Deblur_set3/color_patch_blur_99_ircnn_Isigma_1_Msigma_1.png" width="400px"/>
+<img src="testsets/Deblur_set3/color_patch_blur_99.png" width="400px"/> <img src="testsets/Deblur_set3/color_patch_blur_99_ircnn_Isigma_1_Msigma_1.png" width="400px"/> <img src="testsets/Deblur_set3/color_patch_blur_99_kernel.png" width="60px"/>
 
-<img src="testsets/Deblur_set3/IMG_1240_blur.png" width="400px"/> <img src="testsets/Deblur_set3/IMG_1240_blur_ircnn_Isigma_2_Msigma_7.png" width="400px"/>
+<img src="testsets/Deblur_set3/IMG_1240_blur.png" width="400px"/> <img src="testsets/Deblur_set3/IMG_1240_blur_ircnn_Isigma_2_Msigma_7.png" width="400px"/> <img src="testsets/Deblur_set3/IMG_1240_blur_kernel.png" width="60px"/>
 
 
 
@@ -55,9 +55,9 @@ The left is the masked image. The right is the recovered image by IRCNN.
 
 - Inpaint_set2
 
-<img src="testsets/Inpaint_set2/3ch.png" width="400px"/> <img src="testsets/Inpaint_set2/3ch_ircnn.png" width="400px"/>
+<img src="testsets/Inpaint_set2/3ch.png" width="400px"/> <img src="testsets/Inpaint_set2/3ch_ircnn.png" width="400px"/> <img src="testsets/Inpaint_set2/3ch_mask.png" width="60px"/>
 
-<img src="testsets/Inpaint_set2/new.png" width="400px"/> <img src="testsets/Inpaint_set2/new_ircnn.png" width="400px"/>
+<img src="testsets/Inpaint_set2/new.png" width="400px"/> <img src="testsets/Inpaint_set2/new_ircnn.png" width="400px"/> <img src="testsets/Inpaint_set2/new_mask.png" width="60px"/>
 
 Use [Demo_inpaint.m](./Demo_inpaint.m) and [Demo_inpaint_real_application.m](Demo_inpaint_real_application.m) to produce the above results.
 
