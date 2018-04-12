@@ -97,7 +97,7 @@ LR         = blur_HR(scale/2:scale:end-scale/2,scale/2:scale:end-scale/2,:);
 
 Use [Demo_SISR_YCbCr.m](./Demo_SISR_YCbCr.m) and [Demo_SISR_RGB.m](./Demo_SISR_RGB.m) to produce the SISR results.
 
-#### 3. Blurring by ***arbitrary*** kernel followed by standard K-fold downsampler (matlab function ''***downsample***')
+#### 3. Blurring by ***arbitrary*** kernel followed by standard K-fold downsampler (matlab function '***downsample***')
 
 ```matlab
 blur_HR    = imfilter(im, kernel,'replicate'); % kernel can be arbitrary, such as motion blur, Gaussian blur.
