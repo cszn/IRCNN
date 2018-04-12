@@ -62,9 +62,58 @@ The left is the masked image. The right is the recovered image by IRCNN.
 Use [Demo_inpaint.m](./Demo_inpaint.m) and [Demo_inpaint_real_application.m](Demo_inpaint_real_application.m) to produce the above results.
 
 # Single Image Super-Resolution (SISR)
+
+#### IRCNN considers three degradation models for SISR.
+
+#### 1. Bicubic degradation
+
+```matlab
+y = imresize(x, 1/sf, 'bicubic') % y: LR image; x: clean HR image; sf: scale factor
 ```
+
+IRCNN for bicubic degradation has a comparable performance to VDSR and DnCNN.
+
+Use [Demo_SISR_YCbCr.m](./Demo_SISR_YCbCr.m) and [Demo_SISR_RGB.m](./Demo_SISR_RGB.m) to produce the SISR results.
+
+#### 2. Blurring by Gaussian kernel followed by downsampling
+
+For scale factor 3,
+
+```matlab
+kernelsize = ceil(sigma*3)*2+1; % or 7 for sigma = 1.6
+kernel     = fspecial('gaussian',kernelsize,sigma);
+blur_HR    = imfilter(im,kernel,'replicate')
+LR         = imresize(blur_HR, 1/scale, 'nearest');
+```
+
+For scale factors 2 and 4,
+
+```matlab
+kernelsize = ceil(sigma*3)*2+2;
+kernel     = fspecial('gaussian',kernelsize,sigma);
+blur_HR    = imfilter(im, kernel,'replicate');
+LR         = blur_HR(scale/2:scale:end-scale/2,scale/2:scale:end-scale/2,:);
+```
+
+Use [Demo_SISR_YCbCr.m](./Demo_SISR_YCbCr.m) and [Demo_SISR_RGB.m](./Demo_SISR_RGB.m) to produce the SISR results.
+
+#### 3. Blurring by ***arbitrary*** kernel followed by standard K-fold downsampler (matlab function ''***downsample***')
+
+```matlab
+blur_HR    = imfilter(im, kernel,'replicate'); % kernel can be arbitrary, such as motion blur, Gaussian blur.
+for i = 1:size(x,3)
+ LR(:,:,i) = downsample(downsample(blur_HR(:,:,i),sf)',sf)';
+end
+```
+
+More details on this degradation model can be found in the following paper.
+
+[1] Chan, Stanley H., Xiran Wang, and Omar A. Elgendy. "Plug-and-Play ADMM for image restoration: Fixed-point convergence and   applications." IEEE Transactions on Computational Imaging 3.1 (2017): 84-98.
+
+
+
 The left is the zoomed LR image (x3) with motion blur kernel, the right is the super-resolved image (x3) by IRCNN.
-```
+
 <img src="figs/LR1.png" width="400px"/> <img src="figs/LR1_IRCNN.png" width="400px"/>
 
 The left is the low-resolution (LR) image. The right is the super-resolved image by IRCNN.
