@@ -18,6 +18,10 @@ Consequently, this enables an integration of any discriminative denoisers into m
 
 There is no additional training for these tasks.
 
+# Half-Quadratic Splitting (HQS) Algorithm
+<img src="figs/HQS.png" width="600px"/>
+
+
 
 # Image Deblurring
  The left is the blurred image. The right is the deblurred image by IRCNN with estimated kernels by other blind deblurring methods.
