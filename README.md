@@ -15,10 +15,10 @@ Consequently, this enables an integration of any discriminative denoisers into m
 - **Single Image Super-Resolution** 
 - **Color Image Demosaicking**
 
-
 There is no additional training for these tasks.
 
 # Half-Quadratic Splitting (HQS) Algorithm
+
 <img src="figs/HQS.png" width="600px"/>
 
 
