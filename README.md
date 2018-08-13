@@ -29,7 +29,7 @@ There is no additional training for these tasks.
 
 <img src="testsets/Deblur_set1/Blurry4_1.png" width="400px"/> <img src="testsets/Deblur_set1/Blurry4_1_output_ircnn.png" width="400px"/> <img src="testsets/Deblur_set1/Blurry4_1_kernel.png" width="60px"/>
 
-<img src="testsets/Deblur_set1/Blurry2_1.png" width="400px"/> <img src="testsets/Deblur_set1/Blurry2_1_output_ircnn.png" width="400px"/> <img src="testsets/Deblur_set1/Blurry2_1_kernel.png" width="60px"/>
+<img src="testsets/Deblur_set1/Blurry2_3.png" width="400px"/> <img src="testsets/Deblur_set1/Blurry2_3_output_ircnn.png" width="400px"/> <img src="testsets/Deblur_set1/Blurry2_3_kernel.png" width="60px"/>
 
 - Deblur_set2
 
