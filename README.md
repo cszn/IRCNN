@@ -29,21 +29,21 @@ There is no additional training for these tasks.
 
 <img src="testsets/Deblur_set1/Blurry4_1.png" width="350px"/> <img src="testsets/Deblur_set1/Blurry4_1_output_ircnn.png" width="350px"/> <img src="testsets/Deblur_set1/Blurry4_1_kernel.png" width="60px"/>
 
-<img src="testsets/Deblur_set1/Blurry2_3.png" width="400px"/> <img src="testsets/Deblur_set1/Blurry2_3_output_ircnn.png" width="400px"/> <img src="testsets/Deblur_set1/Blurry2_3_kernel.png" width="60px"/>
+<img src="testsets/Deblur_set1/Blurry2_3.png" width="350px"/> <img src="testsets/Deblur_set1/Blurry2_3_output_ircnn.png" width="350px"/> <img src="testsets/Deblur_set1/Blurry2_3_kernel.png" width="60px"/>
 
 - Deblur_set2
 
-<img src="testsets/Deblur_set2/im01_ker02.png" width="400px"/> <img src="testsets/Deblur_set2/im01_ker02_ircnn.png" width="400px"/> <img src="testsets/Deblur_set2/im01_ker02_out_kernel.png" width="60px"/>
+<img src="testsets/Deblur_set2/im01_ker02.png" width="350px"/> <img src="testsets/Deblur_set2/im01_ker02_ircnn.png" width="350px"/> <img src="testsets/Deblur_set2/im01_ker02_out_kernel.png" width="60px"/>
 
-<img src="testsets/Deblur_set2/im04_ker01.png" width="400px"/> <img src="testsets/Deblur_set2/im04_ker01_ircnn.png" width="400px"/> <img src="testsets/Deblur_set2/im04_ker01_out_kernel.png" width="60px"/>
+<img src="testsets/Deblur_set2/im04_ker01.png" width="350px"/> <img src="testsets/Deblur_set2/im04_ker01_ircnn.png" width="350px"/> <img src="testsets/Deblur_set2/im04_ker01_out_kernel.png" width="60px"/>
 
 - Deblur_set3
 
-<img src="testsets/Deblur_set3/2013622235456945_blur_79.png" width="400px"/> <img src="testsets/Deblur_set3/2013622235456945_blur_79_ircnn_Isigma_1_Msigma_1.png" width="400px"/> <img src="testsets/Deblur_set3/2013622235456945_blur_79_kernel.png" width="60px"/>
+<img src="testsets/Deblur_set3/2013622235456945_blur_79.png" width="350px"/> <img src="testsets/Deblur_set3/2013622235456945_blur_79_ircnn_Isigma_1_Msigma_1.png" width="350px"/> <img src="testsets/Deblur_set3/2013622235456945_blur_79_kernel.png" width="60px"/>
 
-<img src="testsets/Deblur_set3/color_patch_blur_99.png" width="400px"/> <img src="testsets/Deblur_set3/color_patch_blur_99_ircnn_Isigma_1_Msigma_1.png" width="400px"/> <img src="testsets/Deblur_set3/color_patch_blur_99_kernel.png" width="60px"/>
+<img src="testsets/Deblur_set3/color_patch_blur_99.png" width="350px"/> <img src="testsets/Deblur_set3/color_patch_blur_99_ircnn_Isigma_1_Msigma_1.png" width="350px"/> <img src="testsets/Deblur_set3/color_patch_blur_99_kernel.png" width="60px"/>
 
-<img src="testsets/Deblur_set3/IMG_1240_blur.png" width="400px"/> <img src="testsets/Deblur_set3/IMG_1240_blur_ircnn_Isigma_2_Msigma_7.png" width="400px"/> <img src="testsets/Deblur_set3/IMG_1240_blur_kernel.png" width="60px"/>
+<img src="testsets/Deblur_set3/IMG_1240_blur.png" width="350px"/> <img src="testsets/Deblur_set3/IMG_1240_blur_ircnn_Isigma_2_Msigma_7.png" width="350px"/> <img src="testsets/Deblur_set3/IMG_1240_blur_kernel.png" width="60px"/>
 
 
 
@@ -55,17 +55,17 @@ The left is the masked image. The right is the recovered image by IRCNN.
 
 - Inpaint_set1
 
-<img src="testsets/Inpaint_set1/butterfly_color_80_masked.png" width="400px"/> <img src="testsets/Inpaint_set1/butterfly_color_80_ircnn.png" width="400px"/>
+<img src="testsets/Inpaint_set1/butterfly_color_80_masked.png" width="350px"/> <img src="testsets/Inpaint_set1/butterfly_color_80_ircnn.png" width="350px"/>
 
-<img src="testsets/Inpaint_set1/butterfly_gray_75_masked.png" width="400px"/> <img src="testsets/Inpaint_set1/butterfly_gray_75_ircnn.png" width="400px"/>
+<img src="testsets/Inpaint_set1/butterfly_gray_75_masked.png" width="350px"/> <img src="testsets/Inpaint_set1/butterfly_gray_75_ircnn.png" width="350px"/>
 
-<img src="testsets/Inpaint_set1/09_50_masked.png" width="400px"/> <img src="testsets/Inpaint_set1/09_50_ircnn.png" width="400px"/>
+<img src="testsets/Inpaint_set1/09_50_masked.png" width="350px"/> <img src="testsets/Inpaint_set1/09_50_ircnn.png" width="350px"/>
 
 - Inpaint_set2
 
-<img src="testsets/Inpaint_set2/3ch.png" width="400px"/> <img src="testsets/Inpaint_set2/3ch_ircnn.png" width="400px"/> <img src="testsets/Inpaint_set2/3ch_mask.png" width="60px"/>
+<img src="testsets/Inpaint_set2/3ch.png" width="350px"/> <img src="testsets/Inpaint_set2/3ch_ircnn.png" width="350px"/> <img src="testsets/Inpaint_set2/3ch_mask.png" width="60px"/>
 
-<img src="testsets/Inpaint_set2/new.png" width="400px"/> <img src="testsets/Inpaint_set2/new_ircnn.png" width="400px"/> <img src="testsets/Inpaint_set2/new_mask.png" width="60px"/>
+<img src="testsets/Inpaint_set2/new.png" width="350px"/> <img src="testsets/Inpaint_set2/new_ircnn.png" width="350px"/> <img src="testsets/Inpaint_set2/new_mask.png" width="60px"/>
 
 Use [Demo_inpaint.m](./Demo_inpaint.m) and [Demo_inpaint_real_application.m](Demo_inpaint_real_application.m) to produce the above results.
 
@@ -122,7 +122,7 @@ More details on this degradation model can be found in the following paper.
 
 The left is the zoomed LR image (x3) with motion blur kernel, the right is the super-resolved image (x3) by IRCNN.
 
-<img src="figs/LR1.png" width="400px"/> <img src="figs/LR1_IRCNN.png" width="400px"/>
+<img src="figs/LR1.png" width="350px"/> <img src="figs/LR1_IRCNN.png" width="350px"/>
 
 The left is the low-resolution (LR) image. The right is the super-resolved image by IRCNN.
 
@@ -150,7 +150,7 @@ The left is the mosaiced image. The right is the demosaiced image by IRCNN.
 
 - Set18 (McMaster, IMAX)
 
-<img src="figs/01_mosaik.png" width="400px"/> <img src="figs/01_ircnn.png" width="400px"/>
+<img src="figs/01_mosaik.png" width="350px"/> <img src="figs/01_ircnn.png" width="350px"/>
 
 - Set24 (Kodak)
 
