@@ -154,7 +154,7 @@ The left is the mosaiced image. The right is the demosaiced image by IRCNN.
 
 - Set24 (Kodak)
 
-<img src="figs/kodim19_mosaik.png" width="400px"/> <img src="figs/kodim19_ircnn.png" width="400px"/>
+<img src="figs/kodim19_mosaik.png" width="350px"/> <img src="figs/kodim19_ircnn.png" width="350px"/>
 
 Use [Demo_demosaiking.m](./Demo_demosaiking.m) to produce the above results.
 
@@ -269,7 +269,7 @@ Demo_demosaiking.m
 
 # Citation
 
-```
+```BibTex
  @inproceedings{zhang2017learning,
    title={Learning Deep CNN Denoiser Prior for Image Restoration},
    author={Zhang, Kai and Zuo, Wangmeng and Gu, Shuhang and Zhang, Lei},
