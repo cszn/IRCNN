@@ -27,7 +27,7 @@ There is no additional training for these tasks.
  The left is the blurred image. The right is the deblurred image by IRCNN with estimated kernels by other blind deblurring methods.
 - Deblur_set1
 
-<img src="testsets/Deblur_set1/Blurry4_1.png" width="300px"/> <img src="testsets/Deblur_set1/Blurry4_1_output_ircnn.png" width="300px"/> <img src="testsets/Deblur_set1/Blurry4_1_kernel.png" width="60px"/>
+<img src="testsets/Deblur_set1/Blurry4_1.png" width="350px"/> <img src="testsets/Deblur_set1/Blurry4_1_output_ircnn.png" width="350px"/> <img src="testsets/Deblur_set1/Blurry4_1_kernel.png" width="60px"/>
 
 <img src="testsets/Deblur_set1/Blurry2_3.png" width="400px"/> <img src="testsets/Deblur_set1/Blurry2_3_output_ircnn.png" width="400px"/> <img src="testsets/Deblur_set1/Blurry2_3_kernel.png" width="60px"/>
 
