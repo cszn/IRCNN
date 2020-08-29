@@ -1,5 +1,7 @@
 # [Learning Deep CNN Denoiser Prior for Image Restoration](http://www4.comp.polyu.edu.hk/~cslzhang/paper/IRCNN_CVPR17.pdf)
 
+# PyTorch version
+[https://github.com/cszn/DPIR](https://github.com/cszn/DPIR)
 
 # Abstract
 Model-based optimization methods and discriminative learning methods have been the two dominant strategies for solving various inverse problems in low-level vision.
