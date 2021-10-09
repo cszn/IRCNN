@@ -1,5 +1,7 @@
 # [Learning Deep CNN Denoiser Prior for Image Restoration](http://www4.comp.polyu.edu.hk/~cslzhang/paper/IRCNN_CVPR17.pdf)
 
+![visitors](https://visitor-badge.glitch.me/badge?page_id=cszn/IRCNN) 
+
 # PyTorch version
 [https://github.com/cszn/DPIR](https://github.com/cszn/DPIR)
 
